@@ -9,6 +9,7 @@
   "main": "dist/bundle.js",
   "style": "dist/bundle.css",
   "scripts": {
+    "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
