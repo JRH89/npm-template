@@ -1,25 +1,27 @@
+# NPM Package Template Instructions
 
-    <h1 style="color: #007bff;">NPM Package Template Instructions</h1>
-    <p>Follow these steps to set up and publish your npm package using the provided template.</p>
+Follow these steps to set up and publish your npm package using the provided template.
 
-    <h2 style="color: #007bff;">Step 1: Update Project Information</h2>
-    <p>Modify the following files to include your package's metadata:</p>
+## Step 1: Update Project Information
 
-    <h3>1. Update <code>package.json</code></h3>
-    <ul>
-        <li><strong>"name"</strong>: Replace <code>"your-package-name-here"</code> with your actual package name.</li>
-        <li><strong>"version"</strong>: Set the initial version of your package.</li>
-        <li><strong>"description"</strong>: Provide a concise description of your package.</li>
-        <li><strong>"author"</strong>: Add your name or the organization’s name.</li>
-        <li><strong>"license"</strong>: Specify the license (e.g., MIT).</li>
-        <li><strong>"repository"</strong>: Add the GitHub URL of the project.</li>
-        <li><strong>"keywords"</strong>: List relevant keywords for better discoverability.</li>
-        <li><strong>"homepage"</strong>: Add a link to the project’s website or documentation.</li>
-        <li><strong>"bugs"</strong>: Provide a link to your issue tracker.</li>
-    </ul>
+Modify the following files to include your package's metadata:
 
-    <pre>
-<code>{
+### 1. Update `package.json`
+
+- **`"name"`**: Replace `"your-package-name-here"` with your actual package name.
+- **`"version"`**: Set the initial version of your package.
+- **`"description"`**: Provide a concise description of your package.
+- **`"author"`**: Add your name or the organization’s name.
+- **`"license"`**: Specify the license (e.g., MIT).
+- **`"repository"`**: Add the GitHub URL of the project.
+- **`"keywords"`**: List relevant keywords for better discoverability.
+- **`"homepage"`**: Add a link to the project’s website or documentation.
+- **`"bugs"`**: Provide a link to your issue tracker.
+
+Example `package.json`:
+
+```json
+{
   "name": "your-awesome-package",
   "version": "1.0.0",
   "description": "A concise description of your package",
@@ -30,55 +32,64 @@
     "url": "https://github.com/yourname/your-awesome-package"
   },
   "keywords": ["keyword1", "keyword2", "react", "npm-package"]
-}</code></pre>
+}
+```
+### 2. Update rollup.config.js
+Replace "your-package-name-here" with your actual package name in the Rollup configuration.
 
-    <h3>2. Update <code>rollup.config.js</code></h3>
-    <p>Replace <code>"your-package-name-here"</code> with your actual package name in the Rollup configuration.</p>
+## Step 2. Organize Your Project Structure
+Set up the /src directory as needed. A common structure includes:
 
-    <h2 style="color: #007bff;">Step 2: Organize Your Project Structure</h2>
-    <p>Set up the <code>/src</code> directory as needed. A common structure includes:</p>
-
-    <pre>
-<code>/src
+```bash
+/src
   /components  -> React components
   /hooks       -> Custom hooks
   /styles      -> Stylesheets or CSS files
-  /utils       -> Utility functions</code></pre>
+  /utils       -> Utility functions
+```
 
-    <p>Ensure you import and export your components and utilities in <code>src/index.js</code>:</p>
+Ensure you import and export your components and utilities in `src/index.js`:
 
-    <pre>
-<code>export { default as MyComponent } from './components/MyComponent';
+```js
+export { default as MyComponent } from './components/MyComponent';
 export { useMyCustomHook } from './hooks/useMyCustomHook';
-export { myUtilityFunction } from './utils/myUtilityFunction';</code></pre>
+export { myUtilityFunction } from './utils/myUtilityFunction';
+```
 
-    <h2 style="color: #007bff;">Step 3: Build the Package</h2>
-    <p>Run the build command from your terminal:</p>
+## Step 3: Build the Package
+Run the build command from your terminal:
 
-    <pre><code>npm run build</code></pre>
+```bash
+npm run build
+```
 
-    <h2 style="color: #007bff;">Step 4: Publish the Package</h2>
-    <h3>1. Login to npm</h3>
-    <p>If you're not logged in, run:</p>
+## Step 4: Publish the Package
 
-    <pre><code>npm login</code></pre>
+### 1. Login to npm
+If you're not logged in, run:
 
-    <h3>2. Publish the Package</h3>
-    <p>To publish your package, run:</p>
+```bash
+npm login
+```
 
-    <pre><code>npm publish</code></pre>
+### 2. Publish the Package
+To publish the package, run:
 
-    <p>For pre-release or beta versions, use:</p>
+```bash
+npm publish
+```
 
-    <pre><code>npm publish --tag beta</code></pre>
+For pre-release or beta versions, use:
 
-    <h2 style="color: #007bff;">Recap of Steps</h2>
-    <ul>
-        <li>Update all fields in <code>package.json</code> and <code>rollup.config.js</code>.</li>
-        <li>Structure your <code>/src</code> folder and export everything via <code>src/index.js</code>.</li>
-        <li>Build the package with <code>npm run build</code>.</li>
-        <li>Login to npm and publish with <code>npm publish</code>.</li>
-    </ul>
+```bash
+npm publis --tag beta
+```
 
-    <p>Your package is now live on npm and ready for use!</p>
+## Recap of Steps:
 
+- Update all fields in `package.json` and `rollup.config.js`.
+- Structure your `/src folder` and export everything via `src/index.js`.
+- Build the package with `npm run build`.
+- Login to npm and publish with `npm publish`.
+
+Your package is now live on npm and ready for use!
