@@ -92,7 +92,7 @@ npm publish
 For pre-release or beta versions, use:
 
 ```bash
-npm publis --tag beta
+npm publish --tag beta
 ```
 
 ## Recap of Steps:
