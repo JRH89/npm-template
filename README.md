@@ -1,4 +1,4 @@
-<div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; padding: 20px;">
+
     <h1 style="color: #007bff;">NPM Package Template Instructions</h1>
     <p>Follow these steps to set up and publish your npm package using the provided template.</p>
 
@@ -81,4 +81,4 @@ export { myUtilityFunction } from './utils/myUtilityFunction';</code></pre>
     </ul>
 
     <p>Your package is now live on npm and ready for use!</p>
-</div>
+
