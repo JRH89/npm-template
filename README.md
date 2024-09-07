@@ -46,6 +46,7 @@ Set up the /src directory as needed. A common structure includes:
   /hooks       -> Custom hooks
   /styles      -> Stylesheets or CSS files
   /utils       -> Utility functions
+  /index.js
 ```
 
 Ensure you import and export your components and utilities in `src/index.js`:
