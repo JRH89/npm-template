@@ -52,6 +52,9 @@ Set up the /src directory as needed. A common structure includes:
 Ensure you import and export your components and utilities in `src/index.js`:
 
 ```js
+// Import styles
+import './styles.css';
+
 // Import components and hooks
 import MyComponent from './components/MyComponent';
 import { useMyCustomHook } from './hooks/useMyCustomHook';
